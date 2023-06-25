@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package restro.flow;
+package restro_flow;
 import MODEL.User;
 import DATA.userdata;
 import javax.swing.ImageIcon;
-import restro.flow.home;
+import restro_flow.home;
 
 import javax.swing.JOptionPane;
 

@@ -1,4 +1,4 @@
-package restro.flow;
+package restro_flow;
 
 public class dashboardmain extends javax.swing.JFrame {
 

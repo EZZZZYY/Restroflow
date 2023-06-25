@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package restro.flow;
+package restro_flow;
 import MODEL.User;
 import DATA.userdata;
 
@@ -38,7 +38,7 @@ public class signup extends javax.swing.JFrame {
         String email=txtemail.getText();
         String password=txtpassword.getText();
         String repassword=txtrepassword.getText();
-        if(!name.equals("") && email.matches(emailPattern) && !orgname.equals("") && !password.equals("") &&!repassword.equals("") &&!username.equals(""))
+        if(!name.equals("") && email.matches(emailPattern)  && !password.equals("") &&!repassword.equals("") &&!username.equals(""))
             btnsignup.setEnabled(true);
         else
             btnsignup.setEnabled(false); 
