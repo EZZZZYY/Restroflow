@@ -23,6 +23,7 @@ public class login extends javax.swing.JFrame {
     public login() {
         initComponents();
         btnlogin.setEnabled(false);
+        setResizable(false); 
     }
     public void clear(){
         txtemail.setText("");
@@ -60,7 +61,7 @@ public class login extends javax.swing.JFrame {
         btnclear1 = new javax.swing.JButton();
         btnlogin = new javax.swing.JButton();
         btnexit1 = new javax.swing.JButton();
-        back = new javax.swing.JButton();
+        back1 = new dashboard.swing.Button();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/WHITEE.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -82,30 +83,30 @@ public class login extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMAGES/WHITEE.png"))); // NOI18N
         jLabel2.setText("jLabel1");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 61, 250, 216));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 250, 216));
 
         jLabel4.setFont(new java.awt.Font("Neue Plak Black", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("LOG-IN");
         jLabel4.setIconTextGap(6);
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Neue Plak Extended", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("EMAIL :");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 121, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Neue Plak Extended", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("PASSWORD :");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(341, 158, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, -1, -1));
 
         txtemail.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtemailKeyReleased(evt);
             }
         });
-        jPanel1.add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(404, 116, 237, -1));
+        jPanel1.add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 240, -1));
 
         txtpassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +118,7 @@ public class login extends javax.swing.JFrame {
                 txtpasswordKeyReleased(evt);
             }
         });
-        jPanel1.add(txtpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 153, 196, -1));
+        jPanel1.add(txtpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 240, -1));
 
         btnclear1.setBackground(new java.awt.Color(102, 0, 0));
         btnclear1.setFont(new java.awt.Font("Neue Plak", 1, 14)); // NOI18N
@@ -152,16 +153,20 @@ public class login extends javax.swing.JFrame {
         });
         jPanel1.add(btnexit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(552, 209, 89, 35));
 
-        back.setBackground(new java.awt.Color(102, 0, 0));
-        back.setFont(new java.awt.Font("Neue Plak", 1, 14)); // NOI18N
-        back.setForeground(new java.awt.Color(255, 255, 255));
-        back.setText("GO BACK");
-        back.addActionListener(new java.awt.event.ActionListener() {
+        back1.setBackground(new java.awt.Color(102, 0, 0));
+        back1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard/icon/backk.png"))); // NOI18N
+        back1.setText("\n");
+        back1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backActionPerformed(evt);
+                back1ActionPerformed(evt);
             }
         });
-        jPanel1.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, -1, -1));
+        back1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                back1KeyReleased(evt);
+            }
+        });
+        jPanel1.add(back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 60, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -171,10 +176,11 @@ public class login extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtemailKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtemailKeyReleased
@@ -218,17 +224,25 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_btnloginActionPerformed
 
     private void btnexit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexit1ActionPerformed
-        int a=JOptionPane.showConfirmDialog(null, "ARE YOU SURE YOU WANNA EXIT ?","SELECT",JOptionPane.YES_NO_OPTION);
+        int a=JOptionPane.showConfirmDialog(null, "Are you sure you want to exit?","SELECT",JOptionPane.YES_NO_OPTION);
         if(a==0){
-            System.exit(0);
-
+            this.dispose();
+            
         }
     }//GEN-LAST:event_btnexit1ActionPerformed
 
-    private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
+    private void back1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back1ActionPerformed
+        // TODO add your handling code here:
         setVisible(false);
         new main().setVisible(true);
-    }//GEN-LAST:event_backActionPerformed
+    }//GEN-LAST:event_back1ActionPerformed
+
+    private void back1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_back1KeyReleased
+        // TODO add your handling code here:
+        setVisible(false);
+        new main().setVisible(true);
+                      
+    }//GEN-LAST:event_back1KeyReleased
 
     /**
      * @param args the command line arguments
@@ -266,7 +280,7 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton back;
+    private dashboard.swing.Button back1;
     private javax.swing.JButton btnclear;
     private javax.swing.JButton btnclear1;
     private javax.swing.JButton btnexit1;
