@@ -4,6 +4,8 @@
  */
 package adminpanel;
 
+import dashboard.form.adminpanel;
+
 /**
  *
  * @author ACER

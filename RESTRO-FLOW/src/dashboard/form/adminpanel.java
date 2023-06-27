@@ -2,7 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package adminpanel;
+package dashboard.form;
+
+import adminpanel.menumanagement;
+import adminpanel.pending;
+import adminpanel.tablemanagement;
+import adminpanel.usermanagement;
 
 
 
