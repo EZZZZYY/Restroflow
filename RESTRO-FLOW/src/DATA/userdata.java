@@ -8,8 +8,8 @@ import java.sql.*;
 
 public class userdata {
     public static void save(User user) {
-        String query = "INSERT INTO user(name, username, email, orgname, password, repassword, status) " +
-                "VALUES ('" + user.getName() + "', '" + user.getUsername() + "', '" + user.getEmail() + "', '" + user.getOrgname() + "', '" + user.getPassword() + "', '" + user.getRepassword() + "', 'false')";
+        String query = "INSERT INTO user(name, username, email, password, repassword, status) " +
+                "VALUES ('" + user.getName() + "', '" + user.getUsername() + "', '" + user.getEmail() + "', '" + user.getPassword() + "', '" + user.getRepassword() + "', 'false')";
         dbop.setDataorDelete(query,"Registered Successfully ! Waiting for response");
 
         // Execute the query and perform any necessary database operations
