@@ -6,7 +6,6 @@ package restro_flow;
 import MODEL.User;
 import DATA.userdata;
 import javax.swing.ImageIcon;
-import restro_flow.home;
 
 import javax.swing.JOptionPane;
 
@@ -273,6 +272,7 @@ public class login extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new login().setVisible(true);
             }
