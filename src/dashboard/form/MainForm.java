@@ -21,6 +21,7 @@ public class MainForm extends javax.swing.JPanel {
         billings1 = new dashboard.form.billings();
         additional1 = new dashboard.form.additional();
         jLabel1 = new javax.swing.JLabel();
+        btnverifyuser = new dashboard.swing.Button();
 
         jLabel2.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(87, 0, 0));
@@ -28,6 +29,11 @@ public class MainForm extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Neue Plak Bold", 1, 18)); // NOI18N
         jLabel1.setText("SERVING YOU THE PERFECTION");
+
+        btnverifyuser.setBackground(new java.awt.Color(102, 0, 0));
+        btnverifyuser.setForeground(new java.awt.Color(255, 255, 255));
+        btnverifyuser.setText("VERIFY USERS");
+        btnverifyuser.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -37,8 +43,11 @@ public class MainForm extends javax.swing.JPanel {
                 .addContainerGap(53, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel1)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(btnverifyuser, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel1))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(tableinfo1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -68,9 +77,11 @@ public class MainForm extends javax.swing.JPanel {
                     .addComponent(tableinfo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(billings1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(additional1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1)
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(btnverifyuser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -78,6 +89,7 @@ public class MainForm extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private dashboard.form.additional additional1;
     private dashboard.form.billings billings1;
+    private dashboard.swing.Button btnverifyuser;
     private dashboard.form.foodmenu foodmenu1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
