@@ -139,6 +139,10 @@ public class placeorder extends javax.swing.JFrame {
         billNumlbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(505, 198));
+        setMinimumSize(new java.awt.Dimension(800, 528));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(770, 510));
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
                 formComponentShown(evt);
@@ -149,7 +153,7 @@ public class placeorder extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(87, 0, 0));
         jLabel10.setText("ORDER AREA");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 235, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 250, -1));
 
         jLabel1.setText("BILL NO :");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, -1));
@@ -205,7 +209,7 @@ public class placeorder extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 250, 230));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 250, 230));
 
         jLabel5.setText("CATEGORY :");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
@@ -295,10 +299,10 @@ public class placeorder extends javax.swing.JFrame {
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, -1, 240));
 
         jLabel12.setText("GRAND TOTAL : NRS");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 500, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 490, -1, -1));
 
         lblGrandTotal.setText("000");
-        getContentPane().add(lblGrandTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 500, -1, -1));
+        getContentPane().add(lblGrandTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 490, -1, -1));
 
         btnGenerateBill.setText("GENERATE BILL");
         btnGenerateBill.addActionListener(new java.awt.event.ActionListener() {
@@ -306,7 +310,7 @@ public class placeorder extends javax.swing.JFrame {
                 btnGenerateBillActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGenerateBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, -1, -1));
+        getContentPane().add(btnGenerateBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 490, -1, -1));
 
         back1.setBackground(new java.awt.Color(102, 0, 0));
         back1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard/icon/backk.png"))); // NOI18N
@@ -315,7 +319,7 @@ public class placeorder extends javax.swing.JFrame {
                 back1ActionPerformed(evt);
             }
         });
-        getContentPane().add(back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 30, 46, 46));
+        getContentPane().add(back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 46, 46));
 
         billNumlbl.setText("0");
         getContentPane().add(billNumlbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, -1));
