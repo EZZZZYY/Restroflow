@@ -57,6 +57,9 @@ public class productpage extends javax.swing.JFrame {
         btnclear = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(505, 199));
+        setMinimumSize(new java.awt.Dimension(790, 521));
+        setUndecorated(true);
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
                 formComponentShown(evt);
@@ -67,7 +70,7 @@ public class productpage extends javax.swing.JFrame {
         CATEGORY.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 36)); // NOI18N
         CATEGORY.setForeground(new java.awt.Color(87, 0, 0));
         CATEGORY.setText("PRODUCT SECTION");
-        getContentPane().add(CATEGORY, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 61, 412, -1));
+        getContentPane().add(CATEGORY, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, 360, -1));
 
         back1.setBackground(new java.awt.Color(102, 0, 0));
         back1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard/icon/backk.png"))); // NOI18N
@@ -76,7 +79,7 @@ public class productpage extends javax.swing.JFrame {
                 back1ActionPerformed(evt);
             }
         });
-        getContentPane().add(back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(667, 47, 46, 46));
+        getContentPane().add(back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, 46, 46));
 
         jLabel2.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(87, 0, 0));
@@ -85,7 +88,7 @@ public class productpage extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(87, 0, 0));
-        jLabel3.setText("NAME");
+        jLabel3.setText("NAME :");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 179, 74, -1));
 
         jLabel4.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 18)); // NOI18N
@@ -115,7 +118,7 @@ public class productpage extends javax.swing.JFrame {
                 btnsaveActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsave, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 330, -1, -1));
+        getContentPane().add(btnsave, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 100, 40));
 
         btnclear.setText("CLEAR");
         btnclear.addActionListener(new java.awt.event.ActionListener() {
@@ -123,7 +126,7 @@ public class productpage extends javax.swing.JFrame {
                 btnclearActionPerformed(evt);
             }
         });
-        getContentPane().add(btnclear, new org.netbeans.lib.awtextra.AbsoluteConstraints(354, 330, -1, -1));
+        getContentPane().add(btnclear, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 320, 100, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
