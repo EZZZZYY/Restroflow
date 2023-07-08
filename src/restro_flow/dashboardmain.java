@@ -1,7 +1,7 @@
 package restro_flow;
 
 import javax.swing.JOptionPane;
-import adminpanel.usermanagement;
+
 
 public class dashboardmain extends javax.swing.JFrame {
 
@@ -149,7 +149,7 @@ public class dashboardmain extends javax.swing.JFrame {
 
         adminpanel1.setBackground(new java.awt.Color(153, 0, 0));
         adminpanel1.setForeground(new java.awt.Color(255, 255, 255));
-        adminpanel1.setText("ADMIN PANEL");
+        adminpanel1.setText("USER SETTING");
         adminpanel1.setEffectColor(new java.awt.Color(204, 204, 204));
         adminpanel1.setFont(new java.awt.Font("Neue Plak Bold", 1, 24)); // NOI18N
         adminpanel1.addActionListener(new java.awt.event.ActionListener() {
@@ -371,7 +371,7 @@ public class dashboardmain extends javax.swing.JFrame {
                 .addGroup(paneldashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(btnverifyuser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         bg.setLayer(menupanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -388,7 +388,7 @@ public class dashboardmain extends javax.swing.JFrame {
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(paneldashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(8, Short.MAX_VALUE))
         );
         bgLayout.setVerticalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -403,7 +403,7 @@ public class dashboardmain extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 1069, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -423,9 +423,7 @@ public class dashboardmain extends javax.swing.JFrame {
     }//GEN-LAST:event_button6ActionPerformed
 
     private void adminpanel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminpanel1ActionPerformed
-        // TODO add your handling code here:
-        setVisible(false);
-
+            new Forgetpw().setVisible(true);
     }//GEN-LAST:event_adminpanel1ActionPerformed
 
     private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
