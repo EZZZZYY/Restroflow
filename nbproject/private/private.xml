@@ -18,32 +18,18 @@
             <file>file:/D:/Restroflow/RESTRO-FLOW/src/DATA/userdata.java</file>
         </group>
         <group name="DASHBOARD">
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/logorestro.png</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/profile.jpg</file>
-            <file>file:/D:/23/rf/manish/src/DATA/tables.java</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/9.png</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/delete.png</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/message.png</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/scrollbar/ScrollBarCustom.java</file>
-            <file>file:/D:/23/rf/manish/src/restro_flow/signup.java</file>
-            <file>file:/D:/23/rf/manish/src/restro_flow/dashboardmain.java</file>
-            <file>file:/D:/23/rf/manish/src/MODEL/ORDERBILL.java</file>
-            <file>file:/D:/23/rf/manish/src/restro_flow/placeorder.java</file>
-            <file>file:/D:/23/rf/manish/src/DATA/orderbilldata.java</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/verifyUser.java</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/forgetPassword.java</file>
+            <file>file:/D:/23/rf/manish/src/dashboard/swing/Button.java</file>
             <file>file:/D:/23/rf/manish/src/DATA/connectionclass.java</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/edit.png</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/8.png</file>
-            <file>file:/D:/23/rf/manish/src/restro_flow/addcategory.java</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/logo.png</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/form/MainForm.java</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/profile1.jpg</file>
-            <file>file:/D:/23/rf/manish/src/restro_flow/ved.java</file>
-            <file>file:/D:/23/rf/manish/src/restro_flow/main.java</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/notification.png</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/login.java</file>
             <file>file:/D:/23/rf/manish/src/DATA/categorydata.java</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/backk.png</file>
-            <file>file:/D:/23/rf/manish/src/dashboard/icon/MENI1.png</file>
-            <file>file:/D:/23/rf/manish/src/restro_flow/billAndOrder.java</file>
+            <file>file:/D:/23/rf/manish/src/DATA/tables.java</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/userSetting.java</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/Forgetpw.java</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/addcategory.java</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/ved.java</file>
+            <file>file:/D:/23/rf/manish/src/restro_flow/dashboardmain.java</file>
         </group>
     </open-files>
 </project-private>

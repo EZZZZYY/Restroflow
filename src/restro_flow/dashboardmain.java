@@ -1,7 +1,13 @@
 package restro_flow;
 
 import javax.swing.JOptionPane;
-
+import adminpanel.usermanagement;
+import restro_flow.addcategory;
+import restro_flow.billAndOrder;
+import restro_flow.login;
+import restro_flow.placeorder;
+import restro_flow.productpage;
+import restro_flow.ved;
 
 public class dashboardmain extends javax.swing.JFrame {
 
@@ -149,7 +155,7 @@ public class dashboardmain extends javax.swing.JFrame {
 
         adminpanel1.setBackground(new java.awt.Color(153, 0, 0));
         adminpanel1.setForeground(new java.awt.Color(255, 255, 255));
-        adminpanel1.setText("USER SETTING");
+        adminpanel1.setText("ADMIN PANEL");
         adminpanel1.setEffectColor(new java.awt.Color(204, 204, 204));
         adminpanel1.setFont(new java.awt.Font("Neue Plak Bold", 1, 24)); // NOI18N
         adminpanel1.addActionListener(new java.awt.event.ActionListener() {
@@ -258,8 +264,8 @@ public class dashboardmain extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(button9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(button10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(57, 57, 57))
+                .addComponent(button10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -270,8 +276,6 @@ public class dashboardmain extends javax.swing.JFrame {
                     .addComponent(button10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
-
-        paneldashboard.setPreferredSize(new java.awt.Dimension(800, 526));
 
         jLabel9.setFont(new java.awt.Font("Neue Plak Bold", 1, 18)); // NOI18N
         jLabel9.setText("SERVING YOU THE PERFECTION");
@@ -334,9 +338,14 @@ public class dashboardmain extends javax.swing.JFrame {
         paneldashboardLayout.setHorizontalGroup(
             paneldashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(paneldashboardLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(440, Short.MAX_VALUE))
+                .addContainerGap(118, Short.MAX_VALUE)
+                .addGroup(paneldashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(paneldashboardLayout.createSequentialGroup()
+                        .addComponent(btnverifyuser1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(277, 277, 277)
+                        .addComponent(jLabel9)))
+                .addContainerGap(42, Short.MAX_VALUE))
             .addGroup(paneldashboardLayout.createSequentialGroup()
                 .addGap(70, 70, 70)
                 .addGroup(paneldashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -347,13 +356,7 @@ public class dashboardmain extends javax.swing.JFrame {
                         .addComponent(productbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(productbutton2, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(85, Short.MAX_VALUE))
-            .addGroup(paneldashboardLayout.createSequentialGroup()
-                .addGap(86, 86, 86)
-                .addComponent(btnverifyuser1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel9)
-                .addGap(53, 53, 53))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         paneldashboardLayout.setVerticalGroup(
             paneldashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -371,7 +374,7 @@ public class dashboardmain extends javax.swing.JFrame {
                 .addGroup(paneldashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(btnverifyuser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         bg.setLayer(menupanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -388,7 +391,7 @@ public class dashboardmain extends javax.swing.JFrame {
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(paneldashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         bgLayout.setVerticalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -403,7 +406,7 @@ public class dashboardmain extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 1069, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -423,7 +426,9 @@ public class dashboardmain extends javax.swing.JFrame {
     }//GEN-LAST:event_button6ActionPerformed
 
     private void adminpanel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminpanel1ActionPerformed
-            new Forgetpw().setVisible(true);
+        // TODO add your handling code here:
+        setVisible(false);
+
     }//GEN-LAST:event_adminpanel1ActionPerformed
 
     private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
