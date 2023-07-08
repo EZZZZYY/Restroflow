@@ -74,8 +74,11 @@ public class billAndOrder extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocation(new java.awt.Point(510, 190));
+        setLocation(new java.awt.Point(505, 200));
+        setMinimumSize(new java.awt.Dimension(798, 523));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(798, 524));
+        setSize(new java.awt.Dimension(798, 524));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 36)); // NOI18N
@@ -90,7 +93,7 @@ public class billAndOrder extends javax.swing.JFrame {
                 back1ActionPerformed(evt);
             }
         });
-        getContentPane().add(back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, 46, 46));
+        getContentPane().add(back1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, 46, 46));
 
         jLabel1.setText("FILTER BY DATE");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, 30));
@@ -103,7 +106,7 @@ public class billAndOrder extends javax.swing.JFrame {
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 120, -1));
 
         jLabel2.setText("SORT BY :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ASCENDING ", "DESCENDING" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +114,7 @@ public class billAndOrder extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, -1));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -128,7 +131,7 @@ public class billAndOrder extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 560, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 560, 410));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

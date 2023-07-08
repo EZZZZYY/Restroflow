@@ -33,6 +33,10 @@ public class verifyUser extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(505, 200));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(797, 524));
+        setSize(new java.awt.Dimension(798, 524));
 
         CATEGORY.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 36)); // NOI18N
         CATEGORY.setForeground(new java.awt.Color(87, 0, 0));

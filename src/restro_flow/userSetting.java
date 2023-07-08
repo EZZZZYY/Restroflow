@@ -41,12 +41,17 @@ public class userSetting extends javax.swing.JFrame {
         button3 = new dashboard.swing.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
+        setLocation(new java.awt.Point(505, 200));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(798, 524));
+        setSize(new java.awt.Dimension(798, 524));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         CATEGORY.setFont(new java.awt.Font("Neue Plak Text Bold", 1, 36)); // NOI18N
         CATEGORY.setForeground(new java.awt.Color(87, 0, 0));
         CATEGORY.setText("USER SETTING");
-        getContentPane().add(CATEGORY, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 412, -1));
+        getContentPane().add(CATEGORY, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, -1));
 
         back1.setBackground(new java.awt.Color(102, 0, 0));
         back1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dashboard/icon/backk.png"))); // NOI18N
@@ -68,7 +73,7 @@ public class userSetting extends javax.swing.JFrame {
         jLabel6.setText("SECURITY QN");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In what city were you born?", "What is the name of your favorite pet?", "What high school did you attend?", "What IS your favorite food?" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "In what city were you born?", "What is the name of your favorite pet?", "What high school did you attend?", "What is your favorite food?" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -98,14 +103,23 @@ public class userSetting extends javax.swing.JFrame {
         });
         getContentPane().add(btnclear, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 400, -1, -1));
 
+        button1.setBackground(new java.awt.Color(102, 0, 0));
+        button1.setForeground(new java.awt.Color(255, 255, 255));
         button1.setText("CHANGE PASSWORD");
-        getContentPane().add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 220, -1, -1));
+        button1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        getContentPane().add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 200, 150, -1));
 
+        button2.setBackground(new java.awt.Color(102, 0, 0));
+        button2.setForeground(new java.awt.Color(255, 255, 255));
         button2.setText("CHANGE SECURITY QUESTION");
-        getContentPane().add(button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, -1, -1));
+        button2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        getContentPane().add(button2, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 260, 190, -1));
 
+        button3.setBackground(new java.awt.Color(102, 0, 0));
+        button3.setForeground(new java.awt.Color(255, 255, 255));
         button3.setText("CHANGE ORG NAME");
-        getContentPane().add(button3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, -1, -1));
+        button3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        getContentPane().add(button3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 140, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
