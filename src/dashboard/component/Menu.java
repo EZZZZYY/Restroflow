@@ -1,6 +1,6 @@
 
 package dashboard.component;
-import dashboard.form.adminpanel;
+
 
 public class Menu extends javax.swing.JPanel {
 
@@ -103,8 +103,7 @@ public class Menu extends javax.swing.JPanel {
 
     private void adminpanelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminpanelActionPerformed
         // TODO add your handling code here:
-        setVisible(false);
-        new adminpanel().setVisible(true);
+       
     }//GEN-LAST:event_adminpanelActionPerformed
 
     private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
